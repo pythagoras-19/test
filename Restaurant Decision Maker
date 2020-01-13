@@ -1,0 +1,65 @@
+//This app helps you decide what restaurant to go to. Its based on a numerical rating algorithm with numbers from 1-8.
+
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+
+int main() {
+
+
+//declare variables
+int num1,num2,num3,num4,num5,num6,num7,num8,value,i;
+char a,b,c,d,e;
+double alpha, bravo, charlie, delta, echo, fox, golf;
+string str;
+std::string restaurant, sure;
+std::string BJS,Outback, Kobe, Chilis, Chinese, Pizza, InNOut, Olive_Garden;
+int largest = 8;
+int num = 1;
+
+    
+std::cout << "Hello, this is a decision making algorithm for restaurants.\nWhat are you in the mood for:\n1.Steak\n2.Sushi\n3.Variety\n4.Mexican\n5.Chinese\n6.Pizza\n7.Burgers";
+std::cout << "\nLet's start, press 1 to begin: " ;
+    if (cin >> num)
+      std::cout <<"Rate from 1-8 (8 being best and 1 being worst) each type: ";
+
+      std::cout << "\nSteak:";
+      std::cin >> num1;
+      std::cout << "\nSushi: ";
+      std::cin >> num2;
+      std::cout << "\nVariety: ";
+      std::cin >> num3;
+      std::cout << "\nMexican: ";
+      std::cin >> num4;
+      std::cout << "\nChinese: ";
+      std::cin >> num5;
+      std::cout << "\nPizza: ";
+      std::cin >> num6;
+      std::cout << "\nBurgers: ";
+      std::cin >> num7;
+      std::cout << "\nItalian: ";
+      std::cin >> num8;
+
+      if (num1 == largest )
+      std::cout << "The winner is Steak";
+      else if (num2 == largest)
+      cout << "The winner is Sushi!";
+      else if (num3 == largest)
+      cout << "The winner is BJS";
+      else if (num4 == largest)
+      cout << "The winner is Chili's";
+      else if (num5 == largest)
+      cout << "The winner is Chinese";
+      else if (num6 == largest)
+      cout << "The winner is Mountain Mike's Pizza";
+      else if (num7 == largest)
+      cout << "The winner is either In'N'Out or Chili's";
+      else if (num8 == largest)
+      cout << "The winner is Olive Garden";
+  
+  
+
+
